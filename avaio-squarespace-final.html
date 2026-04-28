@@ -3,6 +3,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 /* Squarespace reset override */
+  /* ── ROOT DEFAULTS (dark fallback so page renders even before JS) ── */
+  :root {
+    --bg:           #0D0A14;
+    --bg-alt:       #100D1A;
+    --bg-section:   #0A0810;
+    --surface:      rgba(255,255,255,0.04);
+    --border:       rgba(255,255,255,0.08);
+    --text-primary: #F0EBE3;
+    --text-secondary: rgba(240,235,227,0.55);
+    --text-label:   rgba(240,235,227,0.35);
+    --accent-purple: #7B5EA7;
+    --accent-gold:   #C9A86C;
+    --accent-gold-dim: rgba(201,168,108,0.15);
+    --tag-bg:       rgba(123,94,167,0.18);
+    --tag-text:     #C4AEDE;
+    --nav-bg:       rgba(13,10,20,0.85);
+    --rule:         rgba(255,255,255,0.07);
+    --hero-text:    #F0EBE3;
+    --phase-num:    rgba(201,168,108,0.25);
+  }
+
 #avaio-case-study * { box-sizing: border-box; }
 #avaio-case-study { font-family: 'DM Sans', sans-serif; }
 
@@ -636,7 +657,7 @@
   }
 
 </style>
-<div id="avaio-case-study">
+<div id="avaio-case-study" class="dark">
 
 
 
