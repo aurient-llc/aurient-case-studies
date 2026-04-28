@@ -636,48 +636,65 @@
   }
 
 
+  /* ── SQUARESPACE OVERRIDES ──────────────────────────────────────── */
   :root {
-    --bg:#0D0A14;--bg-alt:#100D1A;--bg-section:#0A0810;
-    --surface:rgba(255,255,255,0.04);--border:rgba(255,255,255,0.08);
-    --text-primary:#F0EBE3;--text-secondary:rgba(240,235,227,0.55);
-    --text-label:rgba(240,235,227,0.35);--accent-purple:#7B5EA7;
-    --accent-gold:#C9A86C;--accent-gold-dim:rgba(201,168,108,0.15);
-    --tag-bg:rgba(123,94,167,0.18);--tag-text:#C4AEDE;
-    --nav-bg:rgba(13,10,20,0.85);--rule:rgba(255,255,255,0.07);
-    --hero-text:#F0EBE3;--phase-num:rgba(201,168,108,0.25);
+    --bg:#0D0A14; --bg-alt:#100D1A; --bg-section:#0A0810;
+    --surface:rgba(255,255,255,0.04); --border:rgba(255,255,255,0.08);
+    --text-primary:#F0EBE3; --text-secondary:rgba(240,235,227,0.55);
+    --text-label:rgba(240,235,227,0.35); --accent-purple:#7B5EA7;
+    --accent-gold:#C9A86C; --accent-gold-dim:rgba(201,168,108,0.15);
+    --tag-bg:rgba(123,94,167,0.18); --tag-text:#C4AEDE;
+    --rule:rgba(255,255,255,0.07); --hero-text:#F0EBE3;
+    --phase-num:rgba(201,168,108,0.25);
   }
-  #avaio-case-study { display:block !important; }
+  #avaio-case-study                    { display:block !important; background-color:#0D0A14 !important; }
+  #avaio-case-study.dark               { background-color:#0D0A14 !important; }
+  #avaio-case-study.light              { background-color:#F5F1EB !important; }
+  #avaio-case-study .meta-bar          { background-color:var(--bg) !important; }
+  #avaio-case-study .section           { background-color:var(--bg) !important; }
+  #avaio-case-study .section-alt       { background-color:var(--bg-alt) !important; }
+  #avaio-case-study .mesh-panel        { background-color:#0D0A14 !important; }
+  #avaio-case-study .footer-cta        { background-color:var(--bg) !important; }
+  #avaio-case-study .split-text        { background-color:var(--bg-alt) !important; }
+  #avaio-case-study .device-mockup-section { background-color:#080610 !important; }
   #avaio-case-study *, #avaio-case-study *::before, #avaio-case-study *::after { box-sizing:border-box !important; }
-  #avaio-case-study h1,#avaio-case-study h2,#avaio-case-study h3,#avaio-case-study p { margin:0 !important; padding:0 !important; }
-  #avaio-case-study .hero { position:relative !important; overflow:hidden !important; }
-  #avaio-case-study .mesh-panel { position:relative !important; overflow:hidden !important; }
-  #avaio-case-study .site-hero { position:relative !important; overflow:hidden !important; }
-  #avaio-case-study .img-full,#avaio-case-study .img-half,#avaio-case-study .closing-img { overflow:hidden !important; }
-  #avaio-case-study .hero-bg,#avaio-case-study .hero-overlay,
-  #avaio-case-study .mesh-panel-bg,#avaio-case-study .mesh-overlay {
+  #avaio-case-study h1, #avaio-case-study h2, #avaio-case-study h3, #avaio-case-study p { margin:0 !important; padding:0 !important; }
+  #avaio-case-study .two-col           { display:grid !important; grid-template-columns:1fr 1fr !important; gap:80px !important; align-items:start !important; }
+  #avaio-case-study .meta-grid         { display:grid !important; grid-template-columns:repeat(4,1fr) !important; gap:0 !important; }
+  #avaio-case-study .result-blocks     { display:grid !important; grid-template-columns:repeat(3,1fr) !important; gap:2px !important; }
+  #avaio-case-study .closing-strip     { display:grid !important; grid-template-columns:1fr 1fr 1fr !important; gap:2px !important; }
+  #avaio-case-study .services-grid     { display:grid !important; grid-template-columns:repeat(3,1fr) !important; gap:2px !important; }
+  #avaio-case-study .split-section     { display:grid !important; grid-template-columns:1fr 1fr !important; gap:0 !important; align-items:stretch !important; }
+  #avaio-case-study .phase-item        { display:grid !important; grid-template-columns:80px 1fr !important; gap:32px !important; align-items:start !important; }
+  #avaio-case-study .site-campus-grid  { display:grid !important; grid-template-columns:repeat(4,1fr) !important; gap:8px !important; }
+  #avaio-case-study .site-stats        { display:grid !important; grid-template-columns:repeat(4,1fr) !important; }
+  #avaio-case-study .hero-eyebrow      { display:flex !important; align-items:center !important; gap:12px !important; }
+  #avaio-case-study .pain-item         { display:flex !important; gap:20px !important; align-items:flex-start !important; }
+  #avaio-case-study .dir-toggle        { display:flex !important; }
+  #avaio-case-study .site-nav          { display:flex !important; align-items:center !important; justify-content:space-between !important; }
+  #avaio-case-study .site-nav-links    { display:flex !important; gap:20px !important; }
+  #avaio-case-study .browser-dots      { display:flex !important; gap:6px !important; }
+  #avaio-case-study .phase-tags        { display:flex !important; flex-wrap:wrap !important; gap:8px !important; }
+  #avaio-case-study .pain-list         { list-style:none !important; margin:0 !important; padding:0 !important; }
+  #avaio-case-study .hero              { position:relative !important; overflow:hidden !important; }
+  #avaio-case-study .mesh-panel        { position:relative !important; overflow:hidden !important; }
+  #avaio-case-study .site-hero         { position:relative !important; overflow:hidden !important; }
+  #avaio-case-study .img-full, #avaio-case-study .img-half, #avaio-case-study .closing-img { overflow:hidden !important; }
+  #avaio-case-study .hero-bg, #avaio-case-study .hero-overlay,
+  #avaio-case-study .mesh-panel-bg, #avaio-case-study .mesh-overlay {
     position:absolute !important; top:0 !important; left:0 !important;
     right:0 !important; bottom:0 !important; width:100% !important; height:100% !important; margin:0 !important;
   }
-  #avaio-case-study .hero-bg img,#avaio-case-study .mesh-panel-bg img,
-  #avaio-case-study .split-img img,#avaio-case-study .img-full img,
-  #avaio-case-study .img-half img,#avaio-case-study .closing-img img,
-  #avaio-case-study .site-hero-bg,#avaio-case-study .m-hero-bg,
-  #avaio-case-study .site-campus-card img {
+  #avaio-case-study .hero-bg img, #avaio-case-study .mesh-panel-bg img,
+  #avaio-case-study .split-img img, #avaio-case-study .img-full img,
+  #avaio-case-study .img-half img, #avaio-case-study .closing-img img,
+  #avaio-case-study .site-hero-bg, #avaio-case-study .site-campus-card img {
     display:block !important; width:100% !important; height:100% !important;
     max-width:none !important; max-height:none !important;
     object-fit:cover !important; margin:0 !important; padding:0 !important; border:none !important;
   }
-  #avaio-case-study .hero-content,#avaio-case-study .mesh-content { position:relative !important; z-index:2 !important; }
-  #avaio-case-study .hero-scroll { position:absolute !important; z-index:2 !important; }
-  #avaio-case-study .two-col,#avaio-case-study .meta-grid,#avaio-case-study .result-blocks,
-  #avaio-case-study .closing-strip,#avaio-case-study .services-grid,
-  #avaio-case-study .split-section,#avaio-case-study .phase-item { display:grid !important; }
-  #avaio-case-study .hero-eyebrow,#avaio-case-study .pain-item,
-  #avaio-case-study .dir-toggle,#avaio-case-study .site-nav,
-  #avaio-case-study .site-nav-links,#avaio-case-study .browser-dots { display:flex !important; }
-  #avaio-case-study .site-campus-grid,#avaio-case-study .site-stats { display:grid !important; }
-  #avaio-case-study .pain-list { list-style:none !important; }
-
+  #avaio-case-study .hero-content, #avaio-case-study .mesh-content { position:relative !important; z-index:2 !important; }
+  #avaio-case-study .hero-scroll  { position:absolute !important; z-index:2 !important; }
 </style>
 <div id="avaio-case-study" class="dark">
 
@@ -1101,8 +1118,6 @@
   }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
 
   revealEls.forEach(el => io.observe(el));
-
-  // ── Tweaks protocol ────────────────────────
 
 </script>
 
