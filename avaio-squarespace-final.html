@@ -1063,6 +1063,14 @@
 
   revealEls.forEach(el => io.observe(el));
 
+  // Report full page height to parent (for Squarespace iframe sizing)
+  function reportHeight() {
+    window.parent.postMessage({ type: 'avaio-height', height: document.body.scrollHeight }, '*');
+  }
+  window.addEventListener('load', reportHeight);
+  window.addEventListener('resize', reportHeight);
+  setTimeout(reportHeight, 500);
+
 
 </script>
 
