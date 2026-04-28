@@ -656,6 +656,88 @@
     .dir-toggle { bottom: 16px; left: 16px; }
   }
 
+
+  /* ── SQUARESPACE CONFLICT OVERRIDES ──────────────────────────────── */
+  /* These !important rules defeat Squarespace's global styles          */
+
+  #avaio-case-study { display: block !important; }
+  #avaio-case-study *, #avaio-case-study *::before, #avaio-case-study *::after {
+    box-sizing: border-box !important;
+  }
+
+  /* Positioned containers must stay relative so absolute children stay inside */
+  #avaio-case-study .hero          { position: relative !important; overflow: hidden !important; }
+  #avaio-case-study .mesh-panel    { position: relative !important; overflow: hidden !important; }
+  #avaio-case-study .site-hero     { position: relative !important; overflow: hidden !important; }
+  #avaio-case-study .phone-body    { position: relative !important; }
+  #avaio-case-study .split-section { overflow: hidden !important; }
+  #avaio-case-study .img-full      { overflow: hidden !important; }
+  #avaio-case-study .img-half      { overflow: hidden !important; }
+  #avaio-case-study .closing-img   { overflow: hidden !important; }
+
+  /* Absolute overlay layers must stay pinned to their parent */
+  #avaio-case-study .hero-bg,
+  #avaio-case-study .hero-overlay,
+  #avaio-case-study .mesh-panel-bg,
+  #avaio-case-study .mesh-overlay {
+    position: absolute !important;
+    top: 0 !important; left: 0 !important; right: 0 !important; bottom: 0 !important;
+    width: 100% !important; height: 100% !important;
+    margin: 0 !important; padding: 0 !important;
+  }
+
+  /* Cover images inside positioned containers */
+  #avaio-case-study .hero-bg img,
+  #avaio-case-study .mesh-panel-bg img,
+  #avaio-case-study .split-img img,
+  #avaio-case-study .img-full img,
+  #avaio-case-study .img-half img,
+  #avaio-case-study .closing-img img,
+  #avaio-case-study .site-hero-bg,
+  #avaio-case-study .m-hero-bg,
+  #avaio-case-study .site-campus-card img,
+  #avaio-case-study .m-campus-card img {
+    display: block !important;
+    width: 100% !important;
+    height: 100% !important;
+    max-width: none !important;
+    max-height: none !important;
+    object-fit: cover !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 0 !important;
+  }
+
+  /* Grid and flex containers */
+  #avaio-case-study .two-col        { display: grid !important; }
+  #avaio-case-study .meta-grid      { display: grid !important; }
+  #avaio-case-study .result-blocks  { display: grid !important; }
+  #avaio-case-study .closing-strip  { display: grid !important; }
+  #avaio-case-study .services-grid  { display: grid !important; }
+  #avaio-case-study .split-section  { display: grid !important; }
+  #avaio-case-study .phase-item     { display: grid !important; }
+  #avaio-case-study .hero-eyebrow   { display: flex !important; }
+  #avaio-case-study .pain-list      { list-style: none !important; }
+  #avaio-case-study .pain-item      { display: flex !important; }
+  #avaio-case-study .dir-toggle     { display: flex !important; }
+  #avaio-case-study .browser-dots   { display: flex !important; }
+  #avaio-case-study .site-nav       { display: flex !important; }
+  #avaio-case-study .site-nav-links { display: flex !important; }
+  #avaio-case-study .site-campus-grid { display: grid !important; }
+  #avaio-case-study .site-stats     { display: grid !important; }
+
+  /* Prevent Squarespace paragraph/heading margin bleed */
+  #avaio-case-study h1,
+  #avaio-case-study h2,
+  #avaio-case-study h3,
+  #avaio-case-study p  { margin: 0 !important; padding: 0 !important; }
+
+  /* Fix hero z-index layering */
+  #avaio-case-study .hero-content { position: relative !important; z-index: 2 !important; }
+  #avaio-case-study .mesh-content { position: relative !important; z-index: 2 !important; }
+  #avaio-case-study .hero-scroll  { position: absolute !important; z-index: 2 !important; }
+
 </style>
 <div id="avaio-case-study" class="dark">
 
